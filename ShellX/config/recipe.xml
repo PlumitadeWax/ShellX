@@ -1,0 +1,9 @@
+<configs>
+    <append xpath="/recipes">
+        <recipe name="shellXCraft" count="10">
+            <ingredient name="resourceGunPowder" count="10"/>
+            <ingredient name="resourceLead" count="5"/>
+            <ingredient name="resourcePaper" count="2"/>
+        </recipe>
+    </append>
+</configs>

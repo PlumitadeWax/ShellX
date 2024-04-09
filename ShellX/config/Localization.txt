@@ -1,0 +1,2 @@
+Key,File,Type,English,Spanish
+itemShellXDesc,Localization - items.xml,Item Description,ShellX ammunition is a type of shotgun cartridge designed to penetrate armor and cause severe damage to your targets.,La munición ShellX es un tipo de cartucho de escopeta diseñado para atravesar armaduras y causar daños graves a tus objetivos.

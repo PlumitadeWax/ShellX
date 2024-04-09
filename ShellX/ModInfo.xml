@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ModInfo>
+    <Name value="ShellX"/>
+    <Description value="A special shotgun shell that explodes on impact."/>
+    <Author value="PlumitadeWax"/>
+    <Version value="1.1"/>
+    <Configs>
+        <append xpath="/items">
+            <item name="shellX">
+                <property name="AmmoType" value="Shotgun" />
+                <property name="EntityDamage" value="20" />
+                <property name="BlockDamage" value="5" />
+                <property name="MaxRange" value="30" />
+                <property name="ArmorPenetration" value="0.75" />
+                <property name="Icon" value="ShellX" />
+                <property name="Mesh" value="Items/Ammo/Shotgun/ShellX" />
+                <property name="DescriptionKey" value="shellXDesc" />
+                <property name="BulletMass" value="0.1" />
+                <property name="BulletRicochet" value="0" />
+                <property name="Magazine_size" value="1" />
+                <property name="Reload_speed" value="1.2" />
+                <property name="Stacknumber" value="150" />
+            </item>
+        </append>
+        <append xpath="/items/item[@name='gunShotgunT0PipeShotgun']/property[@name='AmmoType']">
+            <setvalue value="shotgunShell,shellX" />
+        </append>
+        <append xpath="/items/item[@name='gunShotgunT1DoubleBarrel']/property[@name='AmmoType']">
+            <setvalue value="shotgunShell,shellX" />
+        </append>
+        <append xpath="/items/item[@name='gunShotgunT2PumpShotgun']/property[@name='AmmoType']">
+            <setvalue value="shotgunShell,shellX" />
+        </append>
+        <append xpath="/items/item[@name='gunShotgunT3AutoShotgun']/property[@name='AmmoType']">
+            <setvalue value="shotgunShell,shellX" />
+        </append>
+        <append xpath="/recipes">
+            <recipe name="shellXCraft" count="10">
+                <ingredient name="resourceGunPowder" count="10"/>
+                <ingredient name="resourceLead" count="5"/>
+                <ingredient name="resourcePaper" count="2"/>
+            </recipe>
+        </append>
+    </Configs>
+</ModInfo>
