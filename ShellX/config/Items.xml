@@ -1,10 +1,10 @@
 <configs>
     <append xpath="/items">
-    <item name="shellX">
+    <item name="ShellX">
         <property name="Extends" value="ammoShotgunShell" />
         <property name="Icon" value="ShellX" />
         <property name="Mesh" value="Items/Ammo/Shotgun/ShellX" />
-        <property name="DescriptionKey" value="shellXDesc" />
+        <property name="DescriptionKey" value="ShellXDesc" />
         <property name="AmmoType" value="ShotgunAP" />
         <property name="EntityDamage" value="20" />
         <property name="BlockDamage" value="4" />
