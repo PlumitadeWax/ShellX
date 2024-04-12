@@ -1,30 +1,33 @@
 <configs>
     <append xpath="/items">
-    <item name="ShellX">
-        <property name="Extends" value="ammoShotgunShell" />
-        <property name="Icon" value="ShellX" />
-        <property name="Mesh" value="Items/Ammo/Shotgun/ShellX" />
-        <property name="DescriptionKey" value="ShellXDesc" />
-        <property name="AmmoType" value="ShotgunAP" />
-        <property name="EntityDamage" value="20" />
-        <property name="BlockDamage" value="4" />
-        <property name="MaxRange" value="20" />
-        <property name="ArmorPenetration" value="0.75" />
-        <property name="BulletMass" value="0.1" />
-        <property name="BulletRicochet" value="0" />
-        <property name="Magazine_size" value="1" />
-        <property name="Reload_speed" value="1.2" />
-        <property name="Stacknumber" value="150" />
-        <property name="Material" value="Mbrass" />
-    </item>
-    <!-- Add ShellX ammo compatibility to shotguns -->
-    <append xpath="/items/item[@name='gunShotgunT0PipeShotgun']/property[@name='AmmoType']">
-        <setvalue value="shotgunShell,ShellX" />
+        <item name="shellX">
+            <property name="Extends" value="ammoShotgunShell" />
+            <property name="Icon" value="Shell-X" />
+            <property name="Mesh" value="Items/Ammo/Shotgun/ShellX" />
+            <property name="DescriptionKey" value="shellXDesc" />
+            <property name="AmmoType" value="ShotgunAP" />
+            <property name="EntityDamage" value="201" />
+            <property name="BlockDamage" value="1" />
+            <property name="MaxRange" value="1" />
+            <property name="ArmorPenetration" value="1" />
+            <property name="BulletMass" value="01" />
+            <property name="BulletRicochet" value="1" />
+            <property name="Magazine_size" value="1" />
+            <property name="Reload_speed" value="1.2" />
+            <property name="Stacknumber" value="150" />
+            <property name="Material" value="Mbrass" />
+        </item>
     </append>
-    <append xpath="/items/item[@name='gunShotgunT1DoubleBarrel']/property[@name='AmmoType']">
-        <setvalue value="shotgunShell,ShellX" />
-    </append>
-    <append xpath="/items/item[@name='gunShotgunT2PumpShotgun']/property[@name='AmmoType']">
-        <setvalue value="shotgunShell,ShellX" />
-    </append>
+    <set xpath="/items/item[@name='gunShotgunT0PipeShotgun']/property[@name='AmmoType']">
+        <value>shotgunShell,ShellX</value>
+    </set>
+    <set xpath="/items/item[@name='gunShotgunT1DoubleBarrel']/property[@name='AmmoType']">
+        <value>shotgunShell,ShellX</value>
+    </set>
+    <set xpath="/items/item[@name='gunShotgunT2PumpShotgun']/property[@name='AmmoType']">
+        <value>shotgunShell,ShellX</value>
+    </set>
+    <set xpath="/items/item[@name='gunShotgunT3AutoShotgun']/property[@name='AmmoType']">
+        <value>shotgunShell,ShellX</value>
+    </set>
 </configs>
